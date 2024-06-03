@@ -1,54 +1,76 @@
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    height: 15vh;
-    border: 2px solid;
+    justify-content: space-evenly;
+    height: 7vw;
+    border-bottom: 2px solid black;
 }
 
 .logo{
-    width: 20%;
     height: 100%;
 }
 
 .logo img{
-    width: 50%;
-    height: 100%;
+    width: 7vw;
+    height: 7vw;
 }
 
 .links{
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.2vw;
 }
 
 .links a{
-    padding:25px 10px;
+    padding:0 10px;
     text-decoration: none;
     color: black;
 }
 
 .links a:hover{
     margin-bottom: -2px;
-    border-bottom: 2px solid green;
+    transform: scale(1.1);
 }
 
 .search{
     width: 25%;
+    height: 2.5vw;
+    border-radius: 15px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
     background-color: rgb(241, 241, 241);
 }
 
 .search input{
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 1vw;
+    height: 100%;
     border: none;
     background-color: transparent;
-    border-radius: 3px;
-    padding: 10px;
-    width: 100%;
+    width: 90%;
+}
+
+.search img{
+    height: 1.8vw;
+    width: 10%;
 }
 
 .search input:focus{
@@ -56,5 +78,5 @@ nav{
 }
 
 .search:hover{
-    border: 2px solid green;
+    border: 2px solid black;
 }
