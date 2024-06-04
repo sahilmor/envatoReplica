@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+    border: 2px solid;
+}
+
+.logo{
+    width: 20%;
+    height: 100%;
+}
+
+.logo img{
+    width: 50%;
+    height: 100%;
+}
+
+.links{
+    width: 50%;
+}
+
+.links a{
+    padding:25px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover{
+    margin-bottom: -2px;
+    border-bottom: 2px solid green;
+}
+
+.search{
+    width: 25%;
+    display: flex;
+    background-color: rgb(241, 241, 241);
+}
+
+.search input{
+    border: none;
+    background-color: transparent;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search:hover{
+    border: 2px solid green;
+}
